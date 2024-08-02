@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.box{
+    height: 80%;
+    width: 80%;
+    border: 1px solid black; 
+    background-color:aliceblue;
+    padding: 10%;
+    border-radius: 50px;
+    animation:myRotater 3s ease-in-out infinite ;
+}
+.b{
+    background-color: black;
+}
+.container{
+    height: 300px;
+    width: 300px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation:myRotater 3s  ease-out  0; */
+}
+ 
+ @keyframes myRotater {
+   form{
+    transform: rotate(0deg);
+   } 
+   to{
+    transform: rotate(3600deg);
+   }
+ }
