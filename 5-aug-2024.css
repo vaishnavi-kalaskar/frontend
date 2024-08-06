@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    min-width: 540px;
+    /* height: 340px; */
+    min-height: 340px;
+    /* background-color: aquamarine; */
+    background-image: linear-gradient( 179.7deg,  rgba(249,21,215,1) 1.1%, rgba(22,0,98,1) 99% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+     height: 300px;
+     width: 250px;
+     /* border: 2px solid black; */
+     /* background-color: rgb(202, 123, 123); */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 30px;
+}
+.box2{
+    height: 300px;
+    width: 250px;
+    /* border: 2px solid black; */
+    background-color: rgb(202, 123, 202);background-image: radial-gradient( circle 986.6px at 10% 20%,  rgba(251,6,6,0.94) 0%, rgba(3,31,213,1) 82.8%, rgba(248,101,248,1) 87.9% );
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Playwrite NG Modern", cursive;
+}
+.profile{
+    height: 220px;
+    width: 220px;
+    background-color: crimson;
+    border-radius: 50%;
+    background-image: url(./images.jpeg); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.deatils{
+    font-family: "Playwrite NG Modern", cursive;
+    width: 220px;
+    height: 50px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(237,3,32,0.87) 20.8%, rgba(242,121,1,0.84) 74.4% );
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+@media screen and (max-width:700px) {
+    .container{
+        background-color: blueviolet;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .box1{
+        gap: 10px;
+        flex-direction: column-reverse;
+    }
+    .deatils{
+        width: 300px;
+
+    }
+}
